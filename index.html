@@ -11,7 +11,7 @@
 <body>
     <div class="grid-container">
         <header class="header-site">
-            <form role="search" action="" method="get">
+            <form class="search-header" role="search" action="" method="get">
                 <button type="submit">
                     <img src="./assets/icons/magnify.svg" alt="search icon">
                 </button>
@@ -24,8 +24,10 @@
             </div>
             <div class="user-greeting">
                 <img src="./assets/icons/account.svg" alt="user profile picture">
-                <p>Hi there,</p>
-                <p>Alonso McNaro (@mcnaro)</p>
+                <div>
+                    <p>Hi there,</p>
+                    <p>Alonso McNaro (@mcnaro)</p>
+                </div>
             </div>
             <div class="user-controls">
                 <button>New</button>
@@ -80,148 +82,182 @@
             </ul>
         </nav>
         <main class="main-content-site">
-            <section>
+            <section class="projects-section">
                 <h2>Your Projects</h2>
-                <article class="projects-item">
-                    <h3>Bright Idea Hub</h3>
-                    <p>Brainstorm and collect new concepts for potential apps. Keep track of inspirations and document
-                        early sketches for future development.</p>
-                    <div class="item-controls">
-                        <button>
-                            <img src="./assets/icons/star-plus-outline.svg" alt="favorite icon">
-                        </button>
-                        <button>
-                            <img src="./assets/icons/eye-plus-outline.svg" alt="see later icon">
-                        </button>
-                        <button>
-                            <img src="./assets/icons/source-branch.svg" alt="share icon">
-                        </button>
-                    </div>
-                </article>
-                <article class="projects-item">
-                    <h3>Daily Planner Tool</h3>
-                    <p>Designed to simplify scheduling, reminders, and notes in one place. Helps organize tasks without
-                        distractions or extra steps.</p>
-                    <div class="item-controls">
-                        <button>
-                            <img src="./assets/icons/star-plus-outline.svg" alt="favorite icon">
-                        </button>
-                        <button>
-                            <img src="./assets/icons/eye-plus-outline.svg" alt="see later icon">
-                        </button>
-                        <button>
-                            <img src="./assets/icons/source-branch.svg" alt="share icon">
-                        </button>
-                    </div>
-                </article>
-                <article class="projects-item">
-                    <h3>Future Vision App</h3>
-                    <p>Explores experimental features that may or may not succeed. A place to test creative ideas and
-                        push the limits of design.</p>
-                    <div class="item-controls">
-                        <button>
-                            <img src="./assets/icons/star-plus-outline.svg" alt="favorite icon">
-                        </button>
-                        <button>
-                            <img src="./assets/icons/eye-plus-outline.svg" alt="see later icon">
-                        </button>
-                        <button>
-                            <img src="./assets/icons/source-branch.svg" alt="share icon">
-                        </button>
-                    </div>
-                </article>
-                <article class="projects-item">
-                    <h3>Quick Note Pad</h3>
-                    <p>A lightweight app for jotting down thoughts instantly. Great for students, writers, and anyone
-                        needing a fast way to capture ideas.</p>
-                    <div class="item-controls">
-                        <button>
-                            <img src="./assets/icons/star-plus-outline.svg" alt="favorite icon">
-                        </button>
-                        <button>
-                            <img src="./assets/icons/eye-plus-outline.svg" alt="see later icon">
-                        </button>
-                        <button>
-                            <img src="./assets/icons/source-branch.svg" alt="share icon">
-                        </button>
-                    </div>
-                </article>
-                <article class="projects-item">
-                    <h3>Ad-Free Surfing</h3>
-                    <p>Blocks unwanted ads across multiple platforms. Provides a smoother browsing experience without
-                        interruptions.</p>
-                    <div class="item-controls">
-                        <button>
-                            <img src="./assets/icons/star-plus-outline.svg" alt="favorite icon">
-                        </button>
-                        <button>
-                            <img src="./assets/icons/eye-plus-outline.svg" alt="see later icon">
-                        </button>
-                        <button>
-                            <img src="./assets/icons/source-branch.svg" alt="share icon">
-                        </button>
-                    </div>
-                </article>
-                <article class="projects-item">
-                    <h3>Profit Tracker</h3>
-                    <p>Tracks income and expenses while visualizing financial growth. Ideal for freelancers and small
-                        business owners.</p>
-                    <div class="item-controls">
-                        <button>
-                            <img src="./assets/icons/star-plus-outline.svg" alt="favorite icon">
-                        </button>
-                        <button>
-                            <img src="./assets/icons/eye-plus-outline.svg" alt="see later icon">
-                        </button>
-                        <button>
-                            <img src="./assets/icons/source-branch.svg" alt="share icon">
-                        </button>
-                    </div>
-                </article>
+                <div class="projects-container">
+                    <article class="projects-item">
+                        <h3>Bright Idea Hub</h3>
+                        <p>Brainstorm and collect new concepts for potential apps. Keep track of inspirations and
+                            document
+                            early sketches for future development.</p>
+                        <div class="item-controls">
+                            <button>
+                                <img src="./assets/icons/star-plus-outline.svg" alt="favorite icon">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/eye-plus-outline.svg" alt="see later icon">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/source-branch.svg" alt="share icon">
+                            </button>
+                        </div>
+                    </article>
+                    <article class="projects-item">
+                        <h3>Daily Planner Tool</h3>
+                        <p>Designed to simplify scheduling, reminders, and notes in one place. Helps organize tasks
+                            without
+                            distractions or extra steps.</p>
+                        <div class="item-controls">
+                            <button>
+                                <img src="./assets/icons/star-plus-outline.svg" alt="favorite icon">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/eye-plus-outline.svg" alt="see later icon">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/source-branch.svg" alt="share icon">
+                            </button>
+                        </div>
+                    </article>
+                    <article class="projects-item">
+                        <h3>Future Vision App</h3>
+                        <p>Explores experimental features that may or may not succeed. A place to test creative ideas
+                            and
+                            push the limits of design.</p>
+                        <div class="item-controls">
+                            <button>
+                                <img src="./assets/icons/star-plus-outline.svg" alt="favorite icon">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/eye-plus-outline.svg" alt="see later icon">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/source-branch.svg" alt="share icon">
+                            </button>
+                        </div>
+                    </article>
+                    <article class="projects-item">
+                        <h3>Quick Note Pad</h3>
+                        <p>A lightweight app for jotting down thoughts instantly. Great for students, writers, and
+                            anyone
+                            needing a fast way to capture ideas.</p>
+                        <div class="item-controls">
+                            <button>
+                                <img src="./assets/icons/star-plus-outline.svg" alt="favorite icon">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/eye-plus-outline.svg" alt="see later icon">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/source-branch.svg" alt="share icon">
+                            </button>
+                        </div>
+                    </article>
+                    <article class="projects-item">
+                        <h3>Ad-Free Surfing</h3>
+                        <p>Blocks unwanted ads across multiple platforms. Provides a smoother browsing experience
+                            without
+                            interruptions.</p>
+                        <div class="item-controls">
+                            <button>
+                                <img src="./assets/icons/star-plus-outline.svg" alt="favorite icon">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/eye-plus-outline.svg" alt="see later icon">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/source-branch.svg" alt="share icon">
+                            </button>
+                        </div>
+                    </article>
+                    <article class="projects-item">
+                        <h3>Profit Tracker</h3>
+                        <p>Tracks income and expenses while visualizing financial growth. Ideal for freelancers and
+                            small
+                            business owners.</p>
+                        <div class="item-controls">
+                            <button>
+                                <img src="./assets/icons/star-plus-outline.svg" alt="favorite icon">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/eye-plus-outline.svg" alt="see later icon">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/source-branch.svg" alt="share icon">
+                            </button>
+                        </div>
+                    </article>
+                </div>
             </section>
-            <section>
+            <section class="announcements-section">
                 <h2>Announcements</h2>
-                <article class="announcements-item">
-                    <h3>System Maintenance</h3>
-                    <p>Scheduled maintenance to improve load times and security. Some features may be briefly
-                        unavailable while we deploy changes. Thanks for your patience.</p>
-                </article>
-                <article class="announcements-item">
-                    <h3>Community Share Day</h3>
-                    <p>Join an open session where members present recent builds, share quick tips, and request feedback.
-                        RSVP in the community tab and bring a short demo.</p>
-                </article>
-                <article class="announcements-item">
-                    <h3>Updated Privacy Policy</h3>
-                    <p>We clarified how analytics data is stored and when it’s deleted, and added options to manage
-                        cookies. Review the summary in Settings before continuing.</p>
-                </article>
+                <div class="announcements-container">
+                    <article class="announcements-item">
+                        <h3>System Maintenance</h3>
+                        <p>Scheduled maintenance to improve load times and security. Some features may be briefly
+                            unavailable while we deploy changes. Thanks for your patience.</p>
+                    </article>
+                    <article class="announcements-item">
+                        <h3>Community Share Day</h3>
+                        <p>Join an open session where members present recent builds, share quick tips, and request
+                            feedback.
+                            RSVP in the community tab and bring a short demo.</p>
+                    </article>
+                    <article class="announcements-item">
+                        <h3>Updated Privacy Policy</h3>
+                        <p>We clarified how analytics data is stored and when it’s deleted, and added options to manage
+                            cookies. Review the summary in Settings before continuing.</p>
+                    </article>
+                </div>
             </section>
-            <section>
+            <section class="trending-section">
                 <h2>Trending</h2>
-                <article class="trending-item">
-                    <img src="./assets/icons/account.svg" alt="user profile picture">
-                    <p>@tegan</p>
-                    <p>World Peace Builder</p>
-                </article>
-                <article class="trending-item">
-                    <img src="./assets/icons/account.svg" alt="user profile picture">
-                    <p>@morgan</p>
-                    <p>Super Cool Project</p>
-                </article>
-                <article class="trending-item">
-                    <img src="./assets/icons/account.svg" alt="user profile picture">
-                    <p>@kendall</p>
-                    <p>Life Changing App</p>
-                </article>
-                <article class="trending-item">
-                    <img src="./assets/icons/account.svg" alt="user profile picture">
-                    <p>@alex</p>
-                    <p>No Traffic Maker</p>
-                </article>
+                <div class="trending-container">
+                    <article class="trending-item">
+                        <img src="./assets/icons/account.svg" alt="user profile picture">
+                        <div>
+                            <p>@tegan</p>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </article>
+                    <article class="trending-item">
+                        <img src="./assets/icons/account.svg" alt="user profile picture">
+                        <div>
+                            <p>@morgan</p>
+                            <p>Super Cool Project</p>
+                        </div>
+                    </article>
+                    <article class="trending-item">
+                        <img src="./assets/icons/account.svg" alt="user profile picture">
+                        <div>
+                            <p>@kendall</p>
+                            <p>Life Changing App</p>
+                        </div>
+                    </article>
+                    <article class="trending-item">
+                        <img src="./assets/icons/account.svg" alt="user profile picture">
+                        <div>
+                            <p>@alex</p>
+                            <p>No Traffic Maker</p>
+                        </div>
+                    </article>
+                </div>
             </section>
         </main>
     </div>
+
+    <script>
+        const buttonsTest = document.querySelectorAll("button");
+
+        function helloUser(e) {
+            e.preventDefault();
+            alert("I'm just reacting to the click of a button, my friend...\nHire my creator to make them work...");
+        }
+
+        buttonsTest.forEach(button => {
+            button.addEventListener("click", helloUser);
+        });
+    </script>
 </body>
 
 </html>
