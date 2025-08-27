@@ -4,32 +4,22 @@
     box-sizing: border-box;
 }
 
-img {
-    width: 25px;
-}
-
-html,
-body {
-    height: 100dvh;
-}
-
 body {
     display: flex;
     justify-content: center;
+
+    background-color: rgb(20, 20, 20);
+    font-family: "Roboto", "Noto Sans", sans-serif;
+    font-size: 1rem;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    /* height: inherit;
-    min-width: 970px;
-    width: 80%; */
-}
+    height: 100dvh;
+    max-width: 1300px;
 
-header,
-nav,
-main {
-    border: 1px solid black;
+    background-color: rgb(235, 235, 235);
 }
 
 /* HEADER */
@@ -38,8 +28,11 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
 
-    [class] {
-        border: 1px solid black;
+    background-color: white;
+    box-shadow: 1.5px 2.5px 5px darkgray;
+
+    img {
+        width: 1.3rem;
     }
 }
 
@@ -57,8 +50,12 @@ main {
     }
 
     input {
+        height: 50%;
         width: 100%;
+        max-width: 550px;
         border-radius: 10px;
+        border: none;
+        background-color: rgb(235, 235, 235);
     }
 }
 
@@ -70,14 +67,41 @@ main {
     column-gap: 1.5em;
 
     padding: 0.5em 2em 0.5em 1em;
+
+    font-weight: 600;
+
+    .profile-pic-small {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 }
 
 .user-greeting {
     grid-column: 1 / 2;
     display: flex;
+    align-items: center;
     column-gap: 1em;
 
     padding: 0.5em 1em 0.5em 1.5em;
+
+    font-weight: 800;
+
+    p:first-child {
+        font-size: 0.80rem;
+    }
+
+    p:last-child {
+        font-size: 1.25rem;
+    }
+
+    .profile-pic-large {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 }
 
 .user-controls {
@@ -93,6 +117,9 @@ main {
         padding: 0.6em 1.5em;
         border-radius: 25px;
         border: none;
+        background-color: rgb(18, 116, 245);
+        color: white;
+        font-weight: 600;
     }
 }
 
@@ -103,10 +130,14 @@ main {
     flex-direction: column;
     row-gap: 3em;
 
-    padding: 0.5em;
+    padding: 1em;
 
-    [class] {
-        border: 1px solid black;
+    background-color: rgb(18, 116, 245);
+    color: white;
+
+    img {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+        width: 1.5rem;
     }
 }
 
@@ -115,6 +146,10 @@ main {
     justify-content: start;
     align-items: center;
     column-gap: 0.7em;
+
+    img {
+        width: 2.5rem;
+    }
 }
 
 .website-navigation,
@@ -131,13 +166,12 @@ main {
 
     list-style-type: none;
 
+    font-weight: 600;
+
     a {
         text-decoration: none;
+        color: white;
     }
-
-    /* img {
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
-    } */
 }
 
 /* MAIN CONTENT */
@@ -149,12 +183,9 @@ main {
 
     padding: 1.5em 1em 2.5em 1em;
 
-    [class] {
-        border: 1px solid black;
-    }
-
     h2 {
         padding-bottom: 0.2em;
+        font-size: 1.1rem;
     }
 }
 
@@ -177,9 +208,18 @@ main {
     flex-direction: column;
     padding: 1.5em;
 
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1.5px 2.5px 5px darkgray, -5px 0 rgb(255, 196, 0);
+
     h3 {
-        border: 1px solid black;
+        font-size: 1rem;
     }
+
+    p {
+        color: #616161;
+    }
+
 }
 
 .item-controls {
@@ -191,6 +231,10 @@ main {
     button {
         background-color: transparent;
         border: none;
+
+        img {
+            width: 1.3rem;
+        }
     }
 }
 
@@ -204,10 +248,23 @@ main {
 .announcements-container {
     flex: 1;
     padding: 1.5em;
+
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1.5px 2.5px 5px darkgray;
 }
 
 .announcements-item {
     padding: 0.75em 0 0.75em 0;
+
+    h3 {
+        font-size: 0.95rem;
+    }
+
+    p {
+        color: #616161;
+        font-size: 0.85rem;
+    }
 }
 
 .announcements-item:first-child {
@@ -235,9 +292,30 @@ main {
     display: flex;
     flex-direction: column;
     row-gap: 0.6em;
+
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1.5px 2.5px 5px darkgray;
 }
 
 .trending-item {
     display: flex;
     column-gap: 0.6em;
+
+    .profile-avatar {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    font-size: 0.85rem;
+
+    p:first-child {
+        font-weight: 600;
+    }
+
+    p:last-child {
+        color: #616161;
+    }
 }
